@@ -22,12 +22,15 @@ private slots:
     void on_le_modifier_clicked();
 
     void on_le_supprimer_clicked();
-    void on_le_pdf_clicked();
+
     void on_le_trier_clicked();
     void on_le_recherche_clicked();
 
 
 
+
+
+    void on_le_pdf_clicked();
 
 private:
     Ui::MainWindow *ui;

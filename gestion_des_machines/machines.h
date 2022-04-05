@@ -9,26 +9,28 @@ class Machines
 
 public:
     Machines();
-    Machines(int , int , QString, QString);
+    Machines(int , QString , QString, QString);
     int getid();
-    int getnumserie();
+    QString getstate();
     QString getmarque();
     QString getdatea();
     void setid(int) ;
-    void setnumserie(int) ;
+    void setstate(QString) ;
     void setmarque(QString);
     void setdatea (QString);
     bool ajouter();
     QSqlQueryModel* afficher();
     bool supprimer(int);
-    bool modifier(int , int , QString ,QString);
-    QSqlQueryModel * recherche(int numserie);
+    bool modifier(int , QString , QString ,QString);
+    QSqlQueryModel * recherche(int id);
+    QSqlQueryModel* trier(QString attribute , QString croissance );
+    void pdf();
 
     
     
 private:
-    int id , numserie  ;
-    QString marque , datea;
+    int id   ;
+    QString marque , datea , state;
     
 };
 
