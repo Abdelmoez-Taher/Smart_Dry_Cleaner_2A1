@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.11.0, 2022-03-28T17:19:52. -->
+<!-- Written by QtCreator 4.11.0, 2022-04-09T22:41:21. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -58,7 +58,8 @@
    <valuelist type="QVariantList" key="ClangCodeModel.CustomCommandLineKey">
     <value type="QString">-fno-delayed-template-parsing</value>
    </valuelist>
-   <value type="bool" key="ClangCodeModel.UseGlobalConfig">true</value>
+   <value type="bool" key="ClangCodeModel.UseGlobalConfig">false</value>
+   <value type="QString" key="ClangCodeModel.WarningConfigId">{ab80e762-f93d-48ea-b760-6fd0775781b4}</value>
   </valuemap>
  </data>
  <data>
@@ -287,8 +288,8 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/moezt/Desktop/2021-2022/2A(moez)/2eme semestre/Projet C++/Commande/Réalisation_Implémentation/GUI_Commande/GUI_Commande.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/moezt/Desktop/2021-2022/2A(moez)/2eme semestre/Projet C++/Commande/Réalisation_Implémentation/GUI_Commande/GUI_Commande.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/moezt/Desktop/2021-2022/2A(moez)/2eme semestre/Projet C++/Commande/Realisation_Implementation/GUI_Commande/GUI_Commande.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/moezt/Desktop/2021-2022/2A(moez)/2eme semestre/Projet C++/Commande/Realisation_Implementation/GUI_Commande/GUI_Commande.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
