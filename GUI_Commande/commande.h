@@ -5,6 +5,7 @@
 #include <QString>
 #include <QDebug>
 #include <QSqlError>
+#include <QDate>
 
 #define SETH(type, att) void set_ ## att (type att)
 
@@ -26,6 +27,7 @@ class Commande
     QString dateDepot, dateRecuperation;
     state etat;
 public:
+
     //constructeurs
     Commande();
     Commande(int nbArticles, int CIN, double prix, QString dateRecuperation, int ID=-1, int ID_Employe=0, QString dateDepot="", state etat=waiting);
@@ -53,8 +55,14 @@ public:
     //CRUD
     bool/*void*/ ajouter();
     static QSqlQueryModel * afficher();
+    QSqlQueryModel * search(QString);
+    QSqlQueryModel * TRI(int);
+
     bool modifier(const int &choix);
     static bool supprimer(const int &ID);
+    static bool IDValid(const int &ID, Commande &C);
+    static bool CINValid(const long long int &CIN);
+    /*static Commande fromID(const int &ID);*/
 };
 
 #endif // COMMANDE_H

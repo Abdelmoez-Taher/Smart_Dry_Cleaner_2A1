@@ -3,6 +3,8 @@
 #include <QtSerialPort/QSerialPort> //méthodes permettant l'échange de données dans une liaison série
 #include <QtSerialPort/QSerialPortInfo>//informations sur les ports disponibles
 #include <QDebug>
+#include <iostream>
+#include <string>
 
 class Arduino
 {
@@ -12,6 +14,7 @@ public:
     int close_arduino(); //fermer la connexion entre le PC et Arduino
     int write_to_arduino(QByteArray ); //envoyer des données vers Arduino
     QByteArray read_from_arduino(); //recevoir des données à partir de la carte Arduino
+    std::string read_line_from_arduino();
     QSerialPort* getserial(); //accesseur
     QString getarduino_port_name();
 private:
@@ -21,6 +24,8 @@ private:
     QString arduino_port_name;
     bool arduino_is_available;
     QByteArray data; //données lues à partir d'Arduino
+    char line[1024];
+    QString stupidtest;
 };
 
 #endif // ARDUINO_H

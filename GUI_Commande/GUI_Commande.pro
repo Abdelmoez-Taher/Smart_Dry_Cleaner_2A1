@@ -1,4 +1,6 @@
-QT       += core gui sql serialport
+QT       += core gui sql serialport printsupport multimediawidgets network
+QT += charts network
+QT += axcontainer
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,21 +19,54 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     arduino.cpp \
+    calendrier.cpp \
+    client.cpp \
     commande.cpp \
     connection.cpp \
+    excel.cpp \
+    historique.cpp \
+    machines.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    personnel.cpp \
+    pointage.cpp \
+    produit.cpp \
+    qrcode.cpp \
+    widget.cpp
 
 HEADERS += \
     arduino.h \
+    calendrier.h \
+    client.h \
     commande.h \
     connection.h \
-    mainwindow.h
+    excel.h \
+    historique.h \
+    machines.h \
+    mainwindow.h \
+    personnel.h \
+    pointage.h \
+    produit.h \
+    qrcode.hpp \
+    widget.h
 
 FORMS += \
-    mainwindow.ui
+    calendrier.ui \
+    mainwindow.ui \
+    widget.ui
 
+
+
+QMAKE_CXXFLAGS += -std=gnu++14
+QMAKE_CXXFLAGS += -std=gnu++11
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    Historique.txt \
+    historiqueARD.txt
+
+RESOURCES += \
+    img.qrc

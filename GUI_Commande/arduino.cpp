@@ -38,6 +38,7 @@ int Arduino::connect_arduino()
                 serial->setFlowControl(QSerialPort::NoFlowControl);
                 return 0;
             }
+            qDebug() << "the reason why this doesn't work is : " << serial->error();
             return 1;
         }
         return -1;
@@ -78,4 +79,17 @@ int Arduino::write_to_arduino( QByteArray d)
     }
 
 
+}
+
+std::string Arduino::read_line_from_arduino()
+
+{
+    if(serial->isReadable()){
+
+        serial->readLine(line, sizeof(line));
+        qDebug()<<"this is line the c string"<<line;
+        std::string str(line, strlen(line));
+        //serial->clear();
+        return str;
+    }
 }

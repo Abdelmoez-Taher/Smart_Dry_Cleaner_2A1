@@ -1,0 +1,26 @@
+Vous avez modifiee : 
+CIN
+NOM:
+PRENOM:
+NUM-TELEPHONE:
+NUM-TELEPHONE:
+EMAIL:
+-------------
+NOM:
+PRENOM :
+NUM-TELEPHONE:
+EMAIL:
+ce client a etait modifier le lundi 25 avril 2022 11:43:22.836
+CIN:
+ce client a etait supprimer le lundi 25 avril 2022 12:50:57.167
+CIN:
+ce client a etait supprimer le lundi 25 avril 2022 13:04:09.355
+CIN:4524524
+NOM:DFGDFG
+NUM-TELEPHONE:40404
+EMAIL:FDGDFGDFG
+ ce client a etait modifier le Tuesday 26 April 2022 01:21:47.266
+CIN:0
+ce client a etait supprimer le Tuesday 26 April 2022 01:22:12.344
+CIN:5404
+ce client a etait supprimer le Tuesday 26 April 2022 01:26:59.139
